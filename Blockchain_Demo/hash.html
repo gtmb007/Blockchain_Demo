@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hash/Key</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="hash.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="blockchain_demo.html" align="center">Blockchain Demo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="hash.html">Hash/Key</a></li>
+            <li><a href="signature.html">Signature/Transaction</a></li>
+            <li><a href="block.html">Block</a></li>
+            <li><a href="blockchain.html">Blockchain</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container" id="dimention">
+      <h1>Hash</h1>
+        <table>
+          <tr>
+            <td id="hashshell">
+              <table>
+                <tr class="blockrow">
+                  <td><label for="data">Data: </label></td>
+                  <td><textarea id="data" class="blockinput" name="name" rows="8" cols="80"></textarea></td>
+                </tr>
+                <tr class="blockrow">
+                  <td><label for="hash">Hash: </label></td>
+                  <td><input id="hash" class="blocktest" disabled="disabled" type="text" name="" value="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <h1>Public / Private Key Pairs</h1>
+        <table>
+          <tr>
+            <td id="keyshell">
+              <table>
+                <tr class="blockrow">
+                  <td><label for="privatekey">Private Key: </label></td>
+                  <td><div class="input-group"><input class="" id="privateKey" aria-label="Private Key" value="436752719261026921935"><span class="input-group-btn"><button class="btn btn-secondary" id="randomButton" type="button">Random</button></span></div></td>
+                </tr>
+                <tr class="blockrow">
+                  <td><label for="publickey">Public Key: </label></td>
+                  <td><input class="" id="publicKey" disabled="disabled" value="d69007a06f5712002b814f39cc3f654f67c93004a76c3c69b1fbf98b2f2f8889"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer align="center" id="footer">
+      <p>©2019 Gautam Bharadwaj. All rights reserverd.</p>
+    </footer>
+    <script src="hash.js"></script>
+  </body>
+</html>

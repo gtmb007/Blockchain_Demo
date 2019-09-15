@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Signature/Transaction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="block.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="blockchain_demo.html" align="center">Blockchain Demo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="hash.html">Hash/Key</a></li>
+            <li class="active"><a href="signature.html">Signature/Transaction</a></li>
+            <li><a href="block.html">Block</a></li>
+            <li><a href="blockchain.html">Blockchain</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container" id="dimention">
+      <h1>Signature</h1>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="active"><a id="sign-tab" data-toggle="tab" href="#sign">Sign</a></li>
+        <li><a id="verify-tab" data-toggle="tab" href="#verify">Verify</a></li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade in active" id="sign">
+          <table>
+            <tr>
+              <td id="signshell">
+                <table>
+                  <tr class="signrow">
+                    <td class="leftshell"><label for="message">Message: </label></td>
+                    <td><textarea id="message" class="message" name="name" rows="8" cols="80"></textarea></td>
+                  </tr>
+                  <tr class="signrow">
+                    <td class="leftshell"><label for="privateKey">Private Key: </label></td>
+                    <td><div class="input-group"><input class="" id="privateKey" aria-label="Private Key" value="436752719261026921935"><span class="input-group-btn"><button class="btn btn-secondary" id="randomButton" type="button">Random</button></span></div></td>
+                  </tr>
+                  <tr class="signrow">
+                    <td class="leftshell"></td>
+                    <td><input id="submit1" type="submit" name="" value="Sign"></td>
+                  </tr>
+                  <tr class="signrow">
+                    <td class="leftshell"><label for="messageSignature">Message Signature: </label></td>
+                    <td><input id="messageSignature" class="messageSignature" disabled="disabled" type="text" name="" value=""></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          </div>
+          <div class="tab-pane fade" id="verify">
+            <table>
+              <tr>
+                <td id="verifyshell">
+                  <table>
+                    <tr class="verifyrow">
+                      <td><label for="messageVerify">Message: </label></td>
+                      <td><textarea id="messageVerify" class="messageVerify" name="name" rows="8" cols="80"></textarea></td>
+                    </tr>
+                    <tr class="verifyrow">
+                      <td><label for="publicKey">Public Key: </label></td>
+                      <td><input id="publicKey" class="publicKey" type="text" name="" value="d69007a06f5712002b814f39cc3f654f67c93004a76c3c69b1fbf98b2f2f8889"></td>
+                    </tr>
+                    <tr class="verifyrow">
+                      <td><label for="Signature">Signature: </label></td>
+                      <td><input id="Signature" class="Signature" type="text" name="" value=""></td>
+                    </tr>
+                    <tr class="verifyrow">
+                      <td class="leftshell"></td>
+                      <td><input id="submit2" type="submit" name="" value="Verify"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <br>
+        <h1>Transaction</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="active"><a id="sign-tab1" data-toggle="tab" href="#sign1">Sign</a></li>
+          <li><a id="verify-tab1" data-toggle="tab" href="#verify1">Verify</a></li>
+        </ul>
+        <div class="tab-content" id="myTabContent1">
+          <div class="tab-pane fade in active" id="sign1">
+            <table>
+              <tr>
+                <td id="signshell1">
+                  <table>
+                    <tr class="signrow">
+                      <td class="leftshell"><label for="message1">Message: </label></td>
+                      <td>
+                        <div id="input" class="input-group">
+                          <span class="input-group-addon">$</span>
+                          <input id="amount" type="text" value="100.00" onkeyup="updateHash(1, 1);" class="form-control">
+                          <span class="input-group-addon">from</span>
+                          <input id="publicKey1" type="text" value="50bfee49c706d766411777aac1c9f35456c33ecea2afb4f3c8f1033b0298bdc9" onkeyup="updateHash(1, 1);" class="form-control">
+                          <span class="input-group-addon">to</span>
+                          <input id="toPublicKey1" type="text" value="ee5e9213f639aedd32a41536144b10e2c766f64456cd03e85302dc03525da3e9" onkeyup="updateHash(1, 1);" class="form-control">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="signrow">
+                      <td class="leftshell"><label for="privateKey1">Private Key: </label></td>
+                      <td><div class="input-group"><input class="" id="privateKey1" aria-label="Private Key" value="1234567890987654321"><span class="input-group-btn"><button class="btn btn-secondary" id="randomButton1" type="button">Random</button></span></div></td>
+                    </tr>
+                    <tr class="signrow">
+                      <td class="leftshell"></td>
+                      <td><input id="submit11" type="submit" name="" value="Sign"></td>
+                    </tr>
+                    <tr class="signrow">
+                      <td class="leftshell"><label for="messageSignature1">Message Signature: </label></td>
+                      <td><input id="messageSignature1" class="messageSignature" disabled="disabled" type="text" name="" value=""></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            </div>
+            <div class="tab-pane fade" id="verify1">
+              <table>
+                <tr>
+                  <td id="verifyshell1">
+                    <table>
+                      <tr class="verifyrow">
+                        <td class="leftshell"><label for="message1">Message: </label></td>
+                        <td>
+                          <div id="input" class="input-group">
+                            <span class="input-group-addon">$</span>
+                            <input id="amountVerify" type="text" value="100.00" onkeyup="updateHash(1, 1);" class="form-control">
+                            <span class="input-group-addon">from</span>
+                            <input id="publicKey1Verify" type="text" value="50bfee49c706d766411777aac1c9f35456c33ecea2afb4f3c8f1033b0298bdc9" onkeyup="updateHash(1, 1);" class="form-control">
+                            <span class="input-group-addon">to</span>
+                            <input id="toPublicKey1Verify" type="text" value="ee5e9213f639aedd32a41536144b10e2c766f64456cd03e85302dc03525da3e9" onkeyup="updateHash(1, 1);" class="form-control">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="verifyrow">
+                        <td class="leftshell"><label for="Signature">Signature: </label></td>
+                        <td><input id="Signature1" class="Signature" type="text" name="" value=""></td>
+                      </tr>
+                      <tr class="verifyrow">
+                        <td class="leftshell"></td>
+                        <td><input id="submit22" type="submit" name="" value="Verify"></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer align="center" id="footer">
+      <p>©2019 Gautam Bharadwaj. All rights reserverd.</p>
+    </footer>
+    <script src="signature.js"></script>
+  </body>
+</html>

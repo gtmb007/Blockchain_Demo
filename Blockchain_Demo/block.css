@@ -1,0 +1,195 @@
+#footer{
+  background-color: lightgrey;
+  padding: 8px;
+  border-radius: 5px;
+}
+#blockshell{
+  background-color: #D1F2EB;
+  /* width: 1200px; */
+  height: 420px;
+  border-radius: 10px;
+}
+
+#signshell{
+  background-color: #E5E7E9;
+  height: 370px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#signshell1{
+  background-color: #E5E7E9;
+  height: 230px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#verifyshell{
+  background-color: #E5E7E9;
+  height: 370px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#verifyshell1{
+  background-color: #E5E7E9;
+  height: 190px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#signature{
+  width: 1150px;
+  background-color: #E5E7E9;
+  border-radius: 10px;
+  border: 10px solid #E5E7E9;
+}
+
+#myTab{
+  background: gold;
+  padding-left: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#dimention {
+  width: 1200px;
+}
+
+.blockrow{
+  border: 12px solid #D1F2EB;
+}
+
+.signrow{
+  border: 12px solid #E5E7E9;
+}
+
+.verifyrow{
+  border: 12px solid #E5E7E9;
+}
+
+#input{
+  width: 1035px;
+  margin-left: 30px;
+}
+
+.blocktext{
+  margin-left: 30px;
+  width: 1035px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.blockinput{
+  margin-left: 30px;
+  width: 1035px;
+  border-radius: 5px;
+}
+
+#message{
+  margin-left: 30px;
+  width: 950px;
+  border-radius: 5px;
+}
+#privateKey{
+  margin-left: 30px;
+  width: 872px;
+  height: 35px;
+  border-radius: 5px;
+}
+#privateKey1{
+  margin-left: 30px;
+  width: 957px;
+  height: 35px;
+  border-radius: 5px;
+}
+#messageSignature{
+  margin-left: 30px;
+  width: 950px;
+  height: 35px;
+  border-radius: 5px;
+}
+#messageSignature1{
+  margin-left: 30px;
+  width: 1035px;
+  height: 35px;
+  border-radius: 5px;
+}
+#messageVerify{
+  margin-left: 30px;
+  width: 950px;
+  border-radius: 5px;
+}
+#publicKey{
+  margin-left: 30px;
+  width: 950px;
+  height: 35px;
+  border-radius: 5px;
+}
+#Signature{
+  margin-left: 30px;
+  width: 950px;
+  height: 35px;
+  border-radius: 5px;
+}
+#Signature1{
+  margin-left: 30px;
+  width: 1035px;
+  height: 35px;
+  border-radius: 5px;
+}
+#mine{
+  margin-left: 30px;
+  background-color: blue;
+  color: white;
+  width: 60px;
+  height: 35px;
+  border: 1px solid gold;
+  border-radius: 8px;
+}
+#submit1{
+  margin-left: 30px;
+  background-color: blue;
+  color: white;
+  width: 60px;
+  height: 35px;
+  border: 1px solid gold;
+  border-radius: 8px;
+}
+#submit11{
+  margin-left: 30px;
+  background-color: blue;
+  color: white;
+  width: 60px;
+  height: 35px;
+  border: 1px solid gold;
+  border-radius: 8px;
+}
+#submit2{
+  margin-left: 30px;
+  background-color: blue;
+  color: white;
+  width: 60px;
+  height: 35px;
+  border: 1px solid gold;
+  border-radius: 8px;
+}
+#submit22{
+  margin-left: 30px;
+  background-color: blue;
+  color: white;
+  width: 60px;
+  height: 35px;
+  border: 1px solid gold;
+  border-radius: 8px;
+}
+.leftshell{
+  width: 800px;
+}
+#randomButton{
+  background-color: blue;
+  color: white;
+}
+#randomButton1{
+  background-color: blue;
+  color: white;
+}

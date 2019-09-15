@@ -1,0 +1,64 @@
+#footer{
+  background-color: lightgrey;
+  padding: 8px;
+  border-radius: 5px;
+}
+#hashshell{
+  background-color: #E5E7E9;
+  /* width: 1200px; */
+  height: 300px;
+  border-radius: 10px;
+}
+
+#keyshell{
+  background-color: #E5E7E9;
+  /* width: 1200px; */
+  height: 150px;
+  border-radius: 10px;
+}
+
+.blockrow{
+  border: 12px solid #E5E7E9;
+}
+
+#hash{
+  margin-left: 30px;
+  width: 1035px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+#privateKey{
+  margin-left: 30px;
+  width: 920px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+#randomButton{
+  background-color: blue;
+  color: white;
+}
+#publicKey{
+  margin-left: 30px;
+  width: 1000px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+
+.keytest{
+  margin-left: 30px;
+  width: 1000px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.blockinput{
+  margin-left: 30px;
+  width: 1035px;
+  border-radius: 5px;
+}
+#dimention {
+  width: 1200px;
+}

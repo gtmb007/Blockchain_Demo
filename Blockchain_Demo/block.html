@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Block</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="block.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="blockchain_demo.html" align="center">Blockchain Demo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="hash.html">Hash/Key</a></li>
+            <li><a href="signature.html">Signature/Transaction</a></li>
+            <li class="active"><a href="block.html">Block</a></li>
+            <li><a href="blockchain.html">Blockchain</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container" id="dimention">
+      <h1>Block</h1>
+        <table>
+          <tr>
+            <td id="blockshell">
+              <table>
+                <tr class="blockrow">
+                  <td class="leftshell"><label for="block">Block: </label></td>
+                  <td><div id="input" class="input-group"><span class="input-group-addon">#</span><input id="block" type="text" value="0" class="form-control"></div></td>
+                </tr>
+                <tr class="blockrow">
+                  <td class="leftshell"><label for="blocknonce">Nonce: </label></td>
+                  <td><input id="blocknonce" class="blocktext" type="text" name="" value="69732"></td>
+                </tr>
+                <tr class="blockrow">
+                  <td class="leftshell"><label for="blockdata">Data: </label></td>
+                  <td><textarea id="blockdata" class="blockinput" name="name" rows="8" cols="80"></textarea></td>
+                </tr>
+                <tr class="blockrow">
+                  <td class="leftshell"><label for="blockhash">Hash: </label></td>
+                  <td><input id="blockhash" class="blocktext" disabled="disabled" type="text" name="" value="0000e326186933fa83f0efd581d09409022ec07b73a10f549bbaa6472e8a1175"></td>
+                </tr>
+                <tr class="blockrow">
+                  <td></td>
+                  <td><input id="mine" type="submit" name="" value="Mine"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <br>
+      <br>
+      <br>
+      <footer align="center" id="footer">
+        <p>©2019 Gautam Bharadwaj. All rights reserverd.</p>
+      </footer>
+    <script src="block.js"></script>
+  </body>
+</html>

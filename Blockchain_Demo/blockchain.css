@@ -1,0 +1,54 @@
+#footer{
+  background-color: lightgrey;
+  padding: 8px;
+  border-radius: 5px;
+}
+.blockchainshell{
+  background-color: #D1F2EB;
+  width: 600px;
+  height: 645px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.blockrow{
+  border: 12px solid #D1F2EB;
+}
+
+.transactionrow{
+  border-top:12px solid #D1F2EB;
+}
+
+.blockchainspace{
+  width: 100px;
+  height: 645px;
+  color: white;
+}
+
+#input{
+  width: 450px;
+  margin-left: 30px;
+}
+
+.blockchaintext{
+  margin-left: 30px;
+  width: 450px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.blockchaininput{
+  margin-left: 30px;
+  width: 450px;
+  border-radius: 5px;
+}
+
+.mine{
+  margin-left: 30px;
+  background-color: blue;
+  color: white;
+  width: 60px;
+  height: 35px;
+  border: 1px solid gold;
+  border-radius: 8px;
+}
